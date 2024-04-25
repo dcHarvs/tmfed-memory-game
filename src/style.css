@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 1rem;
+}
+
+.app .game-mode-select {
+  display: flex;
+  gap: 4px;
+  min-height: 32px;
+  min-width: 400px;
+}
+
+.app .game-mode-select > button {
+  flex: 1;
+  border: 1px solid #000;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.app .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.app .cards .card {
+  width: 64px;
+  height: 96px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(#fff, #f0f0f0);
+  font-size: 2rem;
+}
+
+.app .cards .placeholder-card {
+  width: 64px;
+  height: 96px;
+  background-color: '#FFF';
+}
+
+.app-button {
+  width: 100%;
+  cursor: pointer;
+  background-color: #cecece;
+  border: 1px solid #000;
+  padding: 0.5rem 0;
+}
